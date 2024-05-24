@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guambis'Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="sub-header">
+        <nav>
+           <a href="unv.html"><img src="guambi_img/logo.png" alt=""></a>
+           <div class="nav-links">
+            <ul>
+                <li><a href="unv.html">HOME</a></li>
+                <li><a href="about.html">SOBRE</a></li>
+                <li><a href="cursos.html">CURSO</a></li>
+                <li><a href="Blog.html">BLOG</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+</ul>
+</div>
+</nav>
+
+
+<h1>Sobre Nós</h1>
+</section>
+
+<!-- conteúdo sobre nós -->
+   <section class="sobre nos">
+     
+    <div class="row">
+
+        <div class="sobre-col">
+               
+            <h1>Somos a maior universidade do mundo</h1>
+            <p>Nossa universidade oferece uma variedade impressionante de cursos, desde as ciências até as artes, da engenharia à medicina, preparando nossos alunos para os desafios e oportunidades do século XXI. Além disso, investimos em instalações de última geração, recursos tecnológicos avançados e parcerias globais para garantir uma experiência educacional de classe mundial.</p>
+            <a href="" class="juven jvc" id="Explorar">Explorar agora</a>
+
+
+            
+
+        </div>
+
+
+        <div id="explorarMensagem" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h2>Explorado com sucesso!</h2>
+            </div>
+        </div>
+        <script src="unv.js"></script>
+
+        <div class="sobre-col">
+            
+            <img src="guambi_img/about.jpg" >
+            
+        </div>
+ 
+
+    </div>
+
+
+   </section>
+
+
+<!-- footer -->
+     <section class="footer">
+     <h4>Sobre Nós</h4>
+     <p>Bem vindo á Universidade Guambi, nossa universidade tem o compromisso de oferecer uma educação de classe mundial em um ambiente inclusivo e colaborativo. Com uma equipe de professores altamente qualificados e uma variedade de programas acadêmicos de renome, capacitamos nossos alunos a alcançar seu pleno potencial e a se destacar em suas carreiras escolhidas.</p>
+
+     <div class="icons">
+
+
+     </div>
+     <p><strong>Desenvolvido por Juvêncio Guambi</strong></p>
+
+     </section>
+
+     <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+    var modal = document.getElementById("explorarModal");
+    var btn = document.getElementById("explorarBtn");
+    var span = document.getElementsByClassName("close-btn")[0];
+
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+});
+     </script>
+
+    
+</body>
+</html>
